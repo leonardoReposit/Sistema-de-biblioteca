@@ -1,0 +1,14 @@
+{
+  "name": "sistema-de-biblioteca",
+  "version": "1.0.0",
+  "main": "js/server.js",
+  "scripts": {
+    "start": "node js/server.js"
+  },
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "express": "^5.2.1",
+    "mssql": "^12.6.0"
+  }
+}

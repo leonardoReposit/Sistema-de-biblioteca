@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Biblioteca - Libros</title>
+    <link rel="stylesheet" href="css/libros.css">
+</head>
+<body>
+    <div id="app">
+        <aside id="sidebar">
+            <div class="sidebar-header"><h3>Biblioteca</h3><p id="userInfo"></p></div>
+            <nav>
+                <a href="/" class="nav-link">Dashboard</a>
+                <a href="/usuarios.html" class="nav-link" id="linkUsuarios">Usuarios</a>
+                <a href="/categorias.html" class="nav-link">Categorias</a>
+                <a href="/autores.html" class="nav-link">Autores</a>
+                <a href="/editoriales.html" class="nav-link">Editoriales</a>
+                <a href="/libros.html" class="nav-link active">Libros</a>
+                <a href="/prestamos.html" class="nav-link">Prestamos</a>
+                <a href="/historial.html" class="nav-link">Historial</a>
+            </nav>
+            <div class="sidebar-footer"><button id="btnCerrarSesion">Cerrar Sesion</button></div>
+        </aside>
+        <main id="main">
+            <h2>Libros <span id="btnNuevo"></span></h2>
+            <div class="filtros">
+                <input type="text" id="buscar" placeholder="Buscar por titulo, ISBN...">
+                <select id="filtroCategoria"><option value="">Todas las categorias</option></select>
+                <select id="filtroAutor"><option value="">Todos los autores</option></select>
+                <select id="filtroEditorial"><option value="">Todas las editoriales</option></select>
+            </div>
+            <div id="tabla"></div>
+        </main>
+    </div>
+    <script src="js/libros.js" defer></script>
+</body>
+</html>

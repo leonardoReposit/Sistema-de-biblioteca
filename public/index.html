@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biblioteca - Dashboard</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <div id="app">
+        <aside id="sidebar">
+            <div class="sidebar-header">
+                <h3>Biblioteca</h3>
+                <p id="userInfo"></p>
+            </div>
+            <nav>
+                <a href="/" class="nav-link active">Dashboard</a>
+                <a href="/usuarios.html" class="nav-link" id="linkUsuarios">Usuarios</a>
+                <a href="/categorias.html" class="nav-link">Categorias</a>
+                <a href="/autores.html" class="nav-link">Autores</a>
+                <a href="/editoriales.html" class="nav-link">Editoriales</a>
+                <a href="/libros.html" class="nav-link">Libros</a>
+                <a href="/prestamos.html" class="nav-link">Prestamos</a>
+                <a href="/historial.html" class="nav-link">Historial</a>
+            </nav>
+            <div class="sidebar-footer">
+                <button id="btnCerrarSesion">Cerrar Sesion</button>
+            </div>
+        </aside>
+        <main id="main">
+            <div id="contenido"></div>
+        </main>
+    </div>
+    <script src="js/index.js" defer></script>
+</body>
+</html>
